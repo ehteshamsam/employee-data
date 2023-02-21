@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'cdnlines.html' %}
+    <title></title>
+    <style media="screen">
+      .jumbotron{
+        margin-left:200px;
+        margin-right:200px;
+        margin-top:30px;
+        background-color: #10E5F4;
+      }
+      body{
+        background-color:#6971d1;
+      }
+      h1{
+        margin-top:100px;
+
+      }
+
+    </style>
+
+  </head>
+  <body>
+     <h1 class="text-center display-4 font-weight-bold text-white">welcome to Employe Data</h1>
+     <div class="jumbotron text-center">
+       <a href="{% url 'hydrabad' %}" class="btn btn-success mr-5 btn-lg">Hydrabad</a>
+       <a href="{% url 'banglore' %}" class="btn btn-info mr-5 btn-lg">Banglore</a>
+       <a href="{% url 'chennai' %}" class="btn btn-warning mr-5 btn-lg">Chennai</a>
+       <a href="{% url 'pune' %}" class="btn btn-danger mr-5 btn-lg">Pune</a>
+
+
+
+    </div>
+
+  </body>
+</html>
